@@ -83,9 +83,6 @@ class PrincipalViewController: UIViewController {
     func cancelarFiltros(){
         
         self.dataProducts = []
-      
-        searchActive = false
-        textoEscrito = 0
         searchBar.setShowsCancelButton(false, animated: true)
         
         //se quita la barra y se vuelve a mostrar el boton de busqueda
@@ -119,8 +116,7 @@ class PrincipalViewController: UIViewController {
             }
         }
     
-        searchActive = true
-        textoEscrito = 0
+      
     }
     
     
