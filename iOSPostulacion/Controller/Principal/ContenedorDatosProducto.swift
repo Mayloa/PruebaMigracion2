@@ -23,10 +23,6 @@ class ContenedorDatosProducto: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-//        self.ofertaCantidad.isHidden = false
-//        self.lineaInferior.isHidden = false
-//        self.ofertaCantidad.text = "Ofertas Especiales"
-        
            self.tarjetaCustom()
         
         

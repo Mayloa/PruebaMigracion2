@@ -26,15 +26,7 @@ class PrincipalViewController: UIViewController {
    
     
     
-    //campo de busqueda
-    var textoEscrito = 1
-    //UISearchBar(frame: CGRect.zero)
-    //variable para saber si se esta realizando una busqueda
-    var searchActive: Bool = false
-    //bandera para saber si se presionó el boton de busqueda
-    var isPressed = false
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -44,22 +36,11 @@ class PrincipalViewController: UIViewController {
       
         //Define Layout here
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        
-        //Get device width
         let width = UIScreen.main.bounds.width
-        
-        //set section inset as per your requirement.
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        
-        //set cell item size here
         layout.itemSize = CGSize(width:(width - 45)  / 2, height: 220)
-        
-        //set Minimum spacing between 2 items
         layout.minimumInteritemSpacing = 0
-        //set minimum vertical line spacing here between two lines in collectionview
         layout.minimumLineSpacing = 10
-        
-        //apply defined layout to collectionview
         self.collectionView!.collectionViewLayout = layout
     
         self.view.backgroundColor = UIColor(red: 217.0/255.0, green: 217.0/255.0, blue: 217.0/255.0, alpha: 1.0)
@@ -78,7 +59,7 @@ class PrincipalViewController: UIViewController {
      Metodo utilizado para la configuracion de la search bar
      */
     func searchBarConfiguration(){
-        //se asigna el delegado al searchBar para poder usar los metodos necesarios y se configuran las propiedades de la se
+        //se asigna el delegado al searchBar para poder usar los metodos necesarios y se configuran las propiedades de la searchVar
         searchBar.delegate = self
         searchBar.setShowsCancelButton(false, animated: true)
         searchBar.layer.borderWidth = 1.0
@@ -112,9 +93,6 @@ class PrincipalViewController: UIViewController {
         
         //se refresca los datos de la vista
         self.collectionView.reloadData()
-        
-        //se oculta el mensaje cuando no hay resultados en la busqueda
-     //   sinPermisosLabel.isHidden = true
         self.collectionView.isUserInteractionEnabled = true
         self.collectionView.isScrollEnabled = true
     }

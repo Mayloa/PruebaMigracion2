@@ -21,14 +21,14 @@ extension PrincipalViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "celda", for: indexPath) as! ContenedorDatosProducto
         
-        let DATOS_TIENDAS : Item!
+        let DATOS_PRODUCTO: Item!
     
-            DATOS_TIENDAS = self.dataProducts[indexPath.row]
+        DATOS_PRODUCTO = self.dataProducts[indexPath.row]
 
-        cell.nombreAfiliado.text = DATOS_TIENDAS.title
-        cell.imagen.loadImageUsingCache(withUrl:  DATOS_TIENDAS.image!, imagenCache: imageCache)
+        cell.nombreAfiliado.text = DATOS_PRODUCTO.title
+        cell.imagen.loadImageUsingCache(withUrl:  DATOS_PRODUCTO.image!, imagenCache: imageCache)
         
-        let precio = String(format: "%.2f", DATOS_TIENDAS.price ?? "sin precio")
+        let precio = String(format: "%.2f", DATOS_PRODUCTO.price ?? "sin precio")
         cell.minOperacion.text = "$ \(precio)"
       
         

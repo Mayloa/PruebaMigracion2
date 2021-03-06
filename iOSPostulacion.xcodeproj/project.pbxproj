@@ -94,6 +94,14 @@
 			path = Principal;
 			sourceTree = "<group>";
 		};
+		73280C2425F32AFC0009420A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				738688E525F2DFBB0020A9C2 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		738688D725F2DFBB0020A9C2 = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +121,12 @@
 		738688E225F2DFBB0020A9C2 /* iOSPostulacion */ = {
 			isa = PBXGroup;
 			children = (
+				73280C2425F32AFC0009420A /* Resources */,
 				73280C2125F329FA0009420A /* Controller */,
 				73280C2025F329E70009420A /* View */,
 				73280C1F25F329DB0009420A /* Model */,
 				738688FB25F2E39C0020A9C2 /* ExtensionUIImageView.swift */,
 				738688E325F2DFBB0020A9C2 /* AppDelegate.swift */,
-				738688E525F2DFBB0020A9C2 /* SceneDelegate.swift */,
 				738688EC25F2DFC00020A9C2 /* Assets.xcassets */,
 				738688EE25F2DFC00020A9C2 /* LaunchScreen.storyboard */,
 				738688F125F2DFC00020A9C2 /* Info.plist */,

@@ -2,7 +2,7 @@
 //  ExtensionPopoverDelegate.swift
 //  iOSPostulacion
 //
-//  Created by Principal on 05/03/21.
+//  Created by Mayte López Aguilar on 05/03/21.
 //
 
 import Foundation
@@ -30,14 +30,13 @@ extension PrincipalViewController: UIPopoverPresentationControllerDelegate {
      Funcion que  dice al delegado que el popover fue cerrado.
      */
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-        print("El controlador a cerrado el Pop")
     }
     
     /**
      Pregunta al delegado si debe descartarse la ventana emergente.
      */
     func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
-        print("El controlador debió de cerrar el Pop")
+      
         return true
     }
 }

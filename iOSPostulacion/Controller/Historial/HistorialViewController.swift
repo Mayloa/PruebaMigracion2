@@ -2,7 +2,7 @@
 //  HistorialViewController.swift
 //  iOSPostulacion
 //
-//  Created by Principal on 05/03/21.
+//  Created by Mayte López Aguilar on 05/03/21.
 //
 
 import UIKit

@@ -49,7 +49,6 @@ extension UIImageView {
         URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
           DispatchQueue.main.async {
            if error != nil {
-                print(error!)
                 let imgDefault = UIImage(named: "Default")!
                 imagenCache.setObject(imgDefault, forKey: urlString as NSString)
                 self.image = imgDefault
